@@ -1,0 +1,514 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222222;
+}
+
+/* Header */
+
+header {
+    background-color: #172033;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+
+.hero {
+    background-color: #304b7a;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 0 0 10px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Main Content */
+
+main {
+    width: 85%;
+    max-width: 1200px;
+    margin: 35px auto;
+}
+
+main h2 {
+    margin-bottom: 20px;
+}
+
+/* Game Table */
+
+table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+th {
+    background-color: #172033;
+    color: white;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Rate Button */
+
+.rate-btn {
+    background-color: #315bdc;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.rate-btn:hover {
+    background-color: #2448b5;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #777777;
+}
+
+/* Rating Form */
+
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.form-container h1 {
+    margin-top: 0;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    margin-top: 25px;
+    padding: 10px 20px;
+    background-color: #315bdc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #2448b5;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.game-card {
+    background: #242424;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #444;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.game-card h2 {
+    color: white;
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+
+.game-card p {
+    color: #dddddd;
+    opacity: 1;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.game-card strong {
+    color: white;
+}
+
+.rate-btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 10px 18px;
+    background: #ffffff;
+    color: #111111;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.rate-btn:hover {
+    opacity: 0.85;
+}
+
+.rank {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #242424;
+    border-radius: 12px;
+    border: 1px solid #444;
+}
+
+.form-container h1 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.form-container label {
+    display: block;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+.form-container input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background: #333;
+    color: white;
+}
+
+.form-container button {
+    margin-top: 25px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.home-container {
+    text-align: center;
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+}
+
+.home-container h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.home-text {
+    color: #cccccc;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.home-btn {
+    display: inline-block;
+    padding: 15px 25px;
+    background: #242424;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #555;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.home-btn:hover {
+    background: #333;
+}
+
+/* =========================
+   HOMEPAGE
+   ========================= */
+
+.main-header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background: #111111;
+    border-bottom: 1px solid #292929;
+}
+
+.main-header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.main-header nav {
+    display: flex;
+    gap: 30px;
+}
+
+.main-header nav a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.main-header nav a:hover {
+    color: white;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #242424 0%,
+            #111111 55%,
+            #080808 100%
+        );
+
+    border-bottom: 1px solid #292929;
+}
+
+.hero-content {
+    max-width: 750px;
+    padding: 60px 20px;
+}
+
+.hero-badge {
+    display: inline-block;
+
+    padding: 8px 16px;
+
+    border: 1px solid #444;
+    border-radius: 30px;
+
+    color: #aaaaaa;
+
+    font-size: 12px;
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    margin: 0;
+
+    font-size: 64px;
+    line-height: 1.05;
+
+    color: white;
+}
+
+.hero h1 span {
+    color: #bbbbbb;
+}
+
+.hero p {
+    max-width: 600px;
+
+    margin: 25px auto;
+
+    color: #aaaaaa;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 13px 24px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.primary-btn {
+    background: white;
+    color: #111111;
+}
+
+.primary-btn:hover {
+    background: #dddddd;
+}
+
+.secondary-btn {
+    border: 1px solid #555;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background: #222222;
+}
+
+
+/* FEATURES */
+
+.features {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 15px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 60px 30px;
+}
+
+.feature-card {
+    background: #171717;
+
+    border: 1px solid #292929;
+
+    border-radius: 10px;
+
+    padding: 25px 18px;
+
+    text-align: center;
+
+    transition: 0.2s;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #555;
+}
+
+.feature-icon {
+    font-size: 28px;
+
+    margin-bottom: 12px;
+}
+
+.feature-card h3 {
+    color: white;
+
+    margin: 8px 0;
+}
+
+.feature-card p {
+    color: #888888;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    border-top: 1px solid #292929;
+
+    color: #666666;
+
+    font-size: 13px;
+}
